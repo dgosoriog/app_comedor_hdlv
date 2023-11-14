@@ -1,38 +1,81 @@
-.App {
-  text-align: center;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body{
+    color: white;
+    font-family: Lato, sans-serif;
+    margin-bottom: 20px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.app-comedor-hdlv {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.hdlv-cabecera-contenedor {
+    display: flex;
+    width: 100%;
+    height: 100px;
+    background-color: #1b1b32;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.hdlv-logo-contenedor {
+    width: 100%;
+    margin: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: left;
 }
 
-.App-link {
-  color: #61dafb;
+.hdlv-titulo-contenedor {
+    width: 100%;
+    margin: 20px;
+    align-items: center;
+    justify-content: center;
+    color: white;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.hdlv-logo {
+   width: 150px; 
+   height: 75px;
+}
+
+.rfid-contenedor {
+    width: 600px;
+    height: 150px;
+    background-color: #d0d0d5;
+    padding: 25px;
+    margin: 10px;
+    justify-content: center;
+    border-radius: 26px;
+}
+
+.table-responsive {
+    max-height:300px;
+}
+
+button {
+    width: 250 px;
+    height: 200 px;
+    font-size: 25px;
+    font-family: Roboto, sans-serif;
+    font-weight: bold;
+    color: white;
+    border: 2px solid white;
+    border-radius:  15px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: #00471b;
+}
+
+.boton-imprimir{
+    background-color: #002ead;
 }
